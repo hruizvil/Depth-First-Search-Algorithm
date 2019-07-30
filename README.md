@@ -1,6 +1,6 @@
 # Depth-First-Search-Algorithm
 
-  Walks through directory_to_search recursively, in search
+  	Walks through directory_to_search recursively, in search
 	of a directory with title name_to_find.
    
 	Returns a tuple. The first component of the tuple is
