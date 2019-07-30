@@ -34,7 +34,6 @@ def recursive_search(directory_to_search, name_to_find):
     '''
     # Base case: Is this the directory we are searching for?
     # If so, return True and print the location of the directory
-    # Author: Mustafa Hussain
     for sub_folder in directory_to_search.iterdir():
         if os.path.isdir(sub_folder):
             if sub_folder.name.capitalize() == name_to_find.capitalize():
