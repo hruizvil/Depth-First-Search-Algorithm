@@ -1,8 +1,3 @@
-'''
-Name : Hugo Ruiz Villar & Hongyang Cai
-NetID: hruizvil & hongyac
-IDs #: 66212078 & 60232034
-'''
 import sys
 
 # Print the list of arguments
@@ -34,11 +29,6 @@ def recursive_search(directory_to_search, name_to_find):
     If the search failed, the second component of the tuple
     is a None-type object.
     
-    @author: Mustafa Hussain
-        Part of the pseudocode used below was made by Mustafa
-        Hussain, as well as the comments made for the description
-        of this function.
-    
     directory_to_search - Path: Current Working Directory 
     name_to_find - String: directory that needs to be found
     '''
@@ -62,7 +52,6 @@ def recursive_search(directory_to_search, name_to_find):
     # Recursive call: Search that sub-directory for name_to_find
     # If it returns True, then we are done; return True with the
     # path we have found.]
-    # Author: Mustafa Hussain
     for x in folder_list:
         # If folder is empty, don't do anything
         if not os.listdir(x):
@@ -81,7 +70,6 @@ def recursive_search(directory_to_search, name_to_find):
                 return (True, x)
         # If we get here, then we have failed to find the directory, and
         # we must return False with None.
-        # Author: Mustafa Hussain
         else:
             return (False, None)
 
